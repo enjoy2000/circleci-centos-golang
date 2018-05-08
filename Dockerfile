@@ -18,5 +18,6 @@ RUN wget https://bitbucket.org/wkhtmltopdf/wkhtmltopdf/downloads/wkhtmltox-0.13.
 RUN echo "%circleci        ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers
 
 USER circleci
+ENV HOME /home/circleci
 
 CMD ["/bin/sh"]
